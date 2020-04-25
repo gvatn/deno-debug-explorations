@@ -1,0 +1,25 @@
+{
+    "version": "0.1.0",
+    "configurations": [
+        {
+            "type": "node2",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "name": "Launch Program2",
+            "program": "${workspaceFolder}/build/index.js",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "debugServer": 4712
+        },
+        {
+            "type": "deno",
+            "request": "launch",
+            "name": "Deno debug current file",
+            "program": "${file}",
+            "cwd": "${workspaceFolder}",
+            "trace": "verbose",
+            "stopOnEntry": false
+        }
+    ]
+}
